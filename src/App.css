@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.horizontalDivider {
+  background-color: darkblue;
+  height: 5px;
+}
+
+.aboutMe,
+.workExp,
+.qualifications {
+  width: 500px;
+  height: 500px;
+  line-height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  background: aliceblue;
+  cursor: pointer;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* .graudate-logo {
+  background-image: url('/public/assets/graduate_2.png');
+  background-repeat: repeat-y;
+  height: 100%;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.job-logo {
+  background-image: url('/public/assets/job.png');
+  background-repeat: repeat-y;
+  height: 100%;
+  background-position-x: center;
+  background-size: contain;
+} */
+
+/* .vertical-join {
+  border: 2px solid #aad5e3;
+  transform: rotate(90deg);
+  width: 48%;
+  margin-left: 26%;
+  margin-top: 15%;
+} */
+
+.quali_logo {
+  background-color: #aad5e3;
+}
+
+.staticHeader {
+  position: fixed;
+  background: #aad5e3;
+  padding: 1rem;
+  width: 100%;
+  z-index: 999;
+  text-align: right;
+}
+
+.padding-top-5 {
+  padding-top: 5rem;
+}
+
+#aboutMe,
+#mySkills {
+  height: 600px;
+}
+
+#myQualifications {
+  height: 1300px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.qual-desc {
+  border-left: 3px solid #aad5e3;
+  margin-left: 2.5rem;
+  padding-left: 4rem;
+  height: 100%;
+}
+
+.progress-bar {
+  background-color: #aad5e3 !important;
+  color: black !important;
+}
+
+/* #contactMe {
+  margin-top: 45rem;
+} */
+
+footer {
+  background: #aad5e3;
+  padding: 1rem;
+}
