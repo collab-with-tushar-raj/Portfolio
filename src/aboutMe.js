@@ -40,7 +40,7 @@ const AboutMe = () => {
                 </Col>
                 <Col xs={6} md={8} className='text-align-left'>
                     <h3>My Name is Tushar Raj</h3>
-                    <p>I have 9.2 years of rich experience in software engineering. I have worked with various domains like Healthcare, IoT and Field Service Automation. I am seeking out a challenging role that utilizes my skills greatly to help grow the organization’s business.</p>
+                    <p>I have over 9 years of rich experience in software engineering. I have worked with various domains like Healthcare, IoT and Field Service Automation. I am seeking out a challenging role that utilizes my skills greatly to help grow the organization’s business.</p>
                     <p>I am a highly skilled professional in building web products. My expertise lies in product designing, the right use of engineering processes, the use of efficient algorithms that optimize the solution and enhance the app performance and architecting the product well enough so that the product scales without any disturbance in the framework.</p>
                     <p>I have been mentoring and leading the team for 5+ years and have a rich leading experience when it comes to end-to-end delivery of the product. I am also a valuable individual contributor and can singlehandedly take the product to heights by achieving milestones.</p>
                     <Row>
