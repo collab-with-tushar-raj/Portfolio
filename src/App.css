@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -76,13 +77,6 @@
   background-color: #aad5e3;
 }
 
-.staticHeader {
-  background: #aad5e3;
-  padding: 1rem;
-  width: 100%;
-  z-index: 999;
-}
-
 #aboutMe,
 #mySkills {
   height: 600px;
@@ -108,11 +102,22 @@
   color: black !important;
 }
 
-/* #contactMe {
-  margin-top: 45rem;
-} */
-
 footer {
   background: #aad5e3;
   padding: 1rem;
+}
+
+.aboutMeInViewPort {
+  opacity: 0;
+}
+
+.aboutMeNotInViewPort {
+  background: #aad5e3;
+  padding: 1rem;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  text-align: center;
+  opacity: 1;
+  transition: all 1s;
 }

@@ -12,16 +12,18 @@ const AboutMe = () => {
         const header = document.querySelector('.staticHeader');
         if (header) {
             if (firstEntry.isIntersecting) {
-                header.style.cssText = `position: relative; text-align: right`;
+                header.classList.add('aboutMeInViewPort');
+                header.classList.remove('aboutMeNotInViewPort');
             }
             else {
-                header.style.cssText = `position: fixed; text-align: center`;
+                header.classList.remove('aboutMeInViewPort');
+                header.classList.add('aboutMeNotInViewPort');
             }
         }
     }
 
     useEffect(() => {
-        const aboutMeObserver = new IntersectionObserver(handleObserver, {threshold: 1});
+        const aboutMeObserver = new IntersectionObserver(handleObserver, { threshold: 0.5 });
         const aboutMeSection = document.querySelector('#aboutMe');
         aboutMeObserver.observe(aboutMeSection);
     }, []);
