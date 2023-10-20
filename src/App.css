@@ -72,45 +72,15 @@
   cursor: pointer;
 }
 
-/* .graudate-logo {
-  background-image: url('/public/assets/graduate_2.png');
-  background-repeat: repeat-y;
-  height: 100%;
-  background-position-x: center;
-  background-size: contain;
-}
-
-.job-logo {
-  background-image: url('/public/assets/job.png');
-  background-repeat: repeat-y;
-  height: 100%;
-  background-position-x: center;
-  background-size: contain;
-} */
-
-/* .vertical-join {
-  border: 2px solid #aad5e3;
-  transform: rotate(90deg);
-  width: 48%;
-  margin-left: 26%;
-  margin-top: 15%;
-} */
-
 .quali_logo {
   background-color: #aad5e3;
 }
 
 .staticHeader {
-  position: fixed;
   background: #aad5e3;
   padding: 1rem;
   width: 100%;
   z-index: 999;
-  text-align: right;
-}
-
-.padding-top-5 {
-  padding-top: 5rem;
 }
 
 #aboutMe,

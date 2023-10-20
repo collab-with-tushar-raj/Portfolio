@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,8 +7,24 @@ import Card from 'react-bootstrap/Card';
 import { CARDS_DATA } from './constants';
 
 const AboutMe = () => {
+    const handleObserver = (entries) => {
+        const firstEntry = entries[0];
+        const header = document.querySelector('.staticHeader');
+        if (header) {
+            if (firstEntry.isIntersecting) {
+                header.style.cssText = `position: relative; text-align: right`;
+            }
+            else {
+                header.style.cssText = `position: fixed; text-align: center`;
+            }
+        }
+    }
 
-    const downloadCV = () => console.log('CV downloaded')
+    useEffect(() => {
+        const aboutMeObserver = new IntersectionObserver(handleObserver, {threshold: 1});
+        const aboutMeSection = document.querySelector('#aboutMe');
+        aboutMeObserver.observe(aboutMeSection);
+    }, []);
 
     return (
         <div id='aboutMe'>
@@ -36,7 +52,7 @@ const AboutMe = () => {
                             <p className='text-align-left'><b>Availability: </b>Immediately Available</p>
                             <p className='text-align-left'>
                                 <a href={`${process.env.PUBLIC_URL}/assets/Tushar_Raj_CV.pdf`} download='Tushar_Raj_CV' target='_blank' rel='noopener noreferrer'>
-                                    <Button variant='outline-secondary' onClick={downloadCV}>Download CV
+                                    <Button variant='outline-secondary'>Download CV
                                         <Image
                                             src={`${process.env.PUBLIC_URL}/assets/download_icon.png`}
                                             width='30' height='30' />
