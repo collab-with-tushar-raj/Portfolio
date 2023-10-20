@@ -12,11 +12,9 @@ const AboutMe = () => {
         const header = document.querySelector('.staticHeader');
         if (header) {
             if (firstEntry.isIntersecting) {
-                header.classList.add('aboutMeInViewPort');
                 header.classList.remove('aboutMeNotInViewPort');
             }
             else {
-                header.classList.remove('aboutMeInViewPort');
                 header.classList.add('aboutMeNotInViewPort');
             }
         }
